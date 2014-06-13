@@ -42,7 +42,7 @@ $(function(){
             this.renderClear();
             this.setClass();
             this.setAttr('placeholder');
-            this.$input.typeahead(this.options.typeahead);
+            this.$input.typeahead({autoselect: true, highlight: true}, this.options.typeahead);
             
             // copy `input-sm | input-lg` classes to placeholder input
             if($.fn.editableform.engine === 'bs3') {
